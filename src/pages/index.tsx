@@ -79,7 +79,7 @@ export default function Home() {
             className="font-medium text-blue-500"
           />
           <Tab label="Summary" className="font-medium text-blue-500" />
-          <Tab label="Flashcards" className="font-medium text-blue-500" />
+          {/* <Tab label="Flashcards" className="font-medium text-blue-500" /> */}
         </Tabs>
 
         {/* Tab Panels */}
@@ -149,12 +149,163 @@ export default function Home() {
         <TabPanel value={value} index={2}>
           <Card className="mb-8 border border-gray-200 p-6 shadow-md">
             <Typography variant="h5" className="mb-4 font-semibold">
-              React and Office 365
+              Microsoft integration resources
             </Typography>
-            <Typography className="text-gray-700">
+            <Typography className="mb-4 text-gray-700">
               React can be integrated with Office 365 to build custom add-ins
               and enhance productivity by leveraging Microsoft Graph APIs.
             </Typography>
+            {/* Add spacing between list items */}
+            <ul className="marker:text-secondary space-y-6">
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  Fluent UI React
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Microsoft’s official UI framework for building experiences
+                  that integrate with Microsoft 365, including Office Add-ins,
+                  is based on React (Fluent UI React v9). This indicates a
+                  significant investment in React for front-end development.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  SharePoint Framework (SPFx)
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Introduced for modern SharePoint development, SPFx uses React
+                  by default in its project templates, and Microsoft has
+                  prioritized React-based components in its Office UI Fabric
+                  (now part of Fluent UI). While SPFx supports other frameworks
+                  like Angular, the documentation and samples heavily lean
+                  toward React.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  Internal Usage
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Microsoft has adopted React for parts of its own products,
+                  such as Teams, Outlook web components, and portions of Office
+                  Online, reflecting an internal preference.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  Power BI Developer Samples
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Microsoft provides a collection of{" "}
+                  <a
+                    href="https://github.com/microsoft/PowerBI-Developer-Samples"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    Power BI Developer Samples
+                  </a>{" "}
+                  that demonstrate how to use React to embed Power BI reports,
+                  dashboards, and tiles into applications. These samples
+                  showcase React's flexibility in integrating with Microsoft's
+                  analytics tools.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  Fluent UI React Styles Handbook
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Microsoft provides a{" "}
+                  <a
+                    href="https://github.com/microsoft/fluentui/blob/82cc27f5d68ca2fa30d906cd50889771e7a18ba8/docs/react-v9/contributing/rfcs/react-components/styles-handbook.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    Fluent UI React Styles Handbook
+                  </a>{" "}
+                  that outlines best practices for styling React components in
+                  Fluent UI React v9. This resource is invaluable for developers
+                  building consistent and accessible user interfaces.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  Fluent UI React Developer Styling Components
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Learn more about{" "}
+                  <a
+                    href="https://react.fluentui.dev/?path=/docs/concepts-developer-styling-components--page"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    Fluent UI React Developer Styling Components
+                  </a>{" "}
+                  to understand how to style components effectively in Fluent UI
+                  React. This documentation provides detailed guidance for
+                  developers.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  Griffel
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Explore{" "}
+                  <a
+                    href="https://griffel.js.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    Griffel
+                  </a>
+                  , a CSS-in-JS styling library used by Fluent UI React v9.
+                  Griffel provides powerful and flexible styling capabilities
+                  for building modern React applications.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  Microsoft Fabric Workload Development Sample
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Check out the{" "}
+                  <a
+                    href="https://github.com/microsoft/Microsoft-Fabric-workload-development-sample"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    Microsoft Fabric Workload Development Sample
+                  </a>{" "}
+                  to explore how React can be used to build workload-specific
+                  applications in Microsoft Fabric. This sample provides
+                  practical insights and examples for developers.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography variant="h6" className="font-semibold">
+                  Fluent UI Official Documentation
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Visit the{" "}
+                  <a
+                    href="https://developer.microsoft.com/en-us/fluentui#/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 underline"
+                  >
+                    Fluent UI Official Documentation
+                  </a>{" "}
+                  to explore comprehensive resources, examples, and guides for
+                  using Fluent UI in your projects.
+                </Typography>
+              </li>
+            </ul>
           </Card>
         </TabPanel>
         <TabPanel value={value} index={3}>
@@ -175,7 +326,7 @@ export default function Home() {
           </Card>
         </TabPanel>
         {/* New Flashcards Tab Panel */}
-        <TabPanel value={value} index={4}>
+        {/* <TabPanel value={value} index={4}>
           <Card className="mb-8 border border-gray-200 p-6 shadow-md">
             <Typography variant="h5" className="mb-4 font-semibold">
               Flashcards
@@ -257,7 +408,7 @@ export default function Home() {
               </ReactMarkdown>
             )}
           </Card>
-        </TabPanel>
+        </TabPanel> */}
       </Container>
 
       {/* Footer Section */}
