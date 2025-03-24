@@ -11,6 +11,7 @@ import { FaReact } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 import { flashcardsMD } from "@/markdown/flashcards";
 import { reactPositivesMd } from "@/markdown/reactPositives";
+import ReactPositives from "@/components/ReactPositives";
 
 function TabPanel(props: {
   children?: React.ReactNode;
@@ -48,7 +49,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Material Tailwind + Next.js + TS</title>
+        <title>React positives</title>
       </Head>
 
       {/* Header Section */}
@@ -75,7 +76,7 @@ export default function Home() {
           <Tab label="React Positives" className="font-medium text-blue-500" />
           <Tab label="Client Server" className="font-medium text-blue-500" />
           <Tab
-            label="React and Office 365"
+            label="React & Microsoft resources"
             className="font-medium text-blue-500"
           />
           <Tab label="Summary" className="font-medium text-blue-500" />
@@ -91,7 +92,7 @@ export default function Home() {
                   h1: ({ node, children, ...props }) => (
                     <Typography
                       variant="h4"
-                      className="mb-4 mt-6 text-2xl font-bold"
+                      className="mb-4 mt-6 text-2xl font-bold text-blue-500"
                       {...(props as any)}
                     >
                       {children}
@@ -135,20 +136,35 @@ export default function Home() {
 
         <TabPanel value={value} index={1}>
           <Card className="mb-8 border border-gray-200 p-6 shadow-md">
-            <Typography variant="h5" className="mb-4 font-semibold">
-              Client Server
+            <Typography
+              variant="h5"
+              className="mb-4 font-semibold text-blue-500"
+            >
+              Client Server (backend - frontend)
             </Typography>
-            <Typography className="text-gray-700">
+            <Typography className="mb-4 text-gray-700">
               The client-server model is a distributed application structure
               that partitions tasks between providers of resources or services
-              (servers) and requesters (clients).
+              (servers - backend) and requesters (clients - frontend).
             </Typography>
+            {/* Embed the iframe */}
+            <div className="mt-6">
+              <iframe
+                src="https://app.excalidraw.com/s/3n0YJYNukue/51XR1s8RK46"
+                title="Client Server Diagram"
+                className="h-96 w-full rounded-md border border-gray-300"
+                allowFullScreen
+              ></iframe>
+            </div>
           </Card>
         </TabPanel>
 
         <TabPanel value={value} index={2}>
           <Card className="mb-8 border border-gray-200 p-6 shadow-md">
-            <Typography variant="h5" className="mb-4 font-semibold">
+            <Typography
+              variant="h5"
+              className="mb-4 font-semibold text-blue-500"
+            >
               Microsoft integration resources
             </Typography>
             <Typography className="mb-4 text-gray-700">
@@ -309,20 +325,11 @@ export default function Home() {
           </Card>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          <Card className="mb-8 border border-gray-200 p-6 shadow-md">
+          <Card className="mb-8 border border-gray-200 p-6 text-blue-500 shadow-md">
             <Typography variant="h5" className="mb-4 font-semibold">
               Summary
             </Typography>
-            <Typography className="mb-4 flex items-center">
-              <span className="inline-flex items-center text-blue-400">
-                <FaReact />
-              </span>
-              <span className="ml-2">
-                React is a powerful library for building user interfaces. It
-                promotes component-based architecture, making code reusable and
-                easier to maintain.
-              </span>
-            </Typography>
+            <ReactPositives />
           </Card>
         </TabPanel>
         {/* New Flashcards Tab Panel */}
