@@ -80,6 +80,7 @@ export default function Home() {
             className="font-medium text-blue-500"
           />
           <Tab label="Summary" className="font-medium text-blue-500" />
+          <Tab label="Benefits" className="font-medium text-blue-500" />
           {/* <Tab label="Flashcards" className="font-medium text-blue-500" /> */}
         </Tabs>
 
@@ -416,6 +417,157 @@ export default function Home() {
             )}
           </Card>
         </TabPanel> */}
+        <TabPanel value={value} index={4}>
+          <Card className="mb-8 border border-gray-200 p-6 shadow-md">
+            <Typography
+              variant="h5"
+              className="mb-4 font-semibold text-blue-500"
+            >
+              Why React for Our Project
+            </Typography>
+
+            {/* React's Standout Benefits */}
+            <Typography
+              variant="h6"
+              className="mb-2 font-semibold text-gray-800"
+            >
+              React’s Standout Benefits
+            </Typography>
+            <ul className="space-y-4">
+              <li className="break-words">
+                <Typography
+                  variant="h6"
+                  className="font-semibold text-gray-800"
+                >
+                  Speed & Simplicity
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Lightweight library with virtual DOM—faster UI updates and
+                  easier to learn than Angular’s full framework (State of JS:
+                  80%+ usage, 90%+ retention).
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography
+                  variant="h6"
+                  className="font-semibold text-gray-800"
+                >
+                  Flexibility
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Build what we need, how we need it—pairs perfectly with
+                  client-server architectures vs. Angular’s rigid structure.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography
+                  variant="h6"
+                  className="font-semibold text-gray-800"
+                >
+                  Ecosystem Power
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Tools like Next.js, Vite, and Fluent UI React (Microsoft’s
+                  choice!) keep us modern and scalable.
+                </Typography>
+              </li>
+            </ul>
+
+            {/* Angular's Strengths */}
+            <Typography
+              variant="h6"
+              className="mb-2 mt-6 font-semibold text-gray-800"
+            >
+              Angular’s Strengths (But…)
+            </Typography>
+            <ul className="space-y-4">
+              <li className="break-words">
+                <Typography
+                  variant="h6"
+                  className="font-semibold text-gray-800"
+                >
+                  Full Framework
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Built-in tools (e.g., dependency injection, RxJS) are great
+                  for enterprise rigidity—but overkill for our lean, agile
+                  goals.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography
+                  variant="h6"
+                  className="font-semibold text-gray-800"
+                >
+                  TypeScript Native
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Strong typing is solid, but React matches this with TypeScript
+                  support minus the complexity (State of JS: React’s learning
+                  curve wins).
+                </Typography>
+              </li>
+            </ul>
+
+            {/* Why React Wins for Us */}
+            <Typography
+              variant="h6"
+              className="mb-2 mt-6 font-semibold text-gray-800"
+            >
+              Why React Wins for Us
+            </Typography>
+            <ul className="space-y-4">
+              <li className="break-words">
+                <Typography
+                  variant="h6"
+                  className="font-semibold text-gray-800"
+                >
+                  Dev Productivity
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Simpler onboarding + huge community = faster delivery (State
+                  of JS: React’s dominance since 2017).
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography
+                  variant="h6"
+                  className="font-semibold text-gray-800"
+                >
+                  Performance
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Client-side efficiency beats Angular’s heavier two-way
+                  binding—ideal for responsive Office 365 apps.
+                </Typography>
+              </li>
+              <li className="break-words">
+                <Typography
+                  variant="h6"
+                  className="font-semibold text-gray-800"
+                >
+                  Future-Proof
+                </Typography>
+                <Typography variant="paragraph" className="text-gray-700">
+                  Microsoft’s React love (Teams, Power BI) aligns us with their
+                  roadmap.
+                </Typography>
+              </li>
+            </ul>
+
+            {/* Takeaway */}
+            <Typography
+              variant="h6"
+              className="mb-2 mt-6 font-semibold text-blue-500 text-gray-800"
+            >
+              Takeaway
+            </Typography>
+            <Typography variant="paragraph" className="text-gray-700">
+              React’s agility and ecosystem outshine Angular’s structure—let’s
+              go lean and win!
+            </Typography>
+          </Card>
+        </TabPanel>
       </Container>
 
       {/* Footer Section */}
